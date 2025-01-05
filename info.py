@@ -10,9 +10,9 @@ from Script import script
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'Sharma movies')
-API_ID = int(environ.get('API_ID', '29882686'))
-API_HASH = environ.get('API_HASH', 'b642a25aee67b2aed02116df4a916bca')
+SESSION = environ.get('SESSION', 'Raj movies')
+API_ID = int(environ.get('API_ID', '27084955'))
+API_HASH = environ.get('API_HASH', '91c88b554ab2a34f8b0c72228f06fc0b')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
@@ -28,8 +28,8 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5
 
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002323290412'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5804953849 7459282233').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002350618294'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6247015342').split()]
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002052558994').split()]
@@ -42,7 +42,7 @@ REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', True)) # Set Tru
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', True)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 
 # This Is Force Subscribe Channel, also known as Auth Channel 
-auth_channel = environ.get('AUTH_CHANNEL', '-1002200165721 -1002053577331') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002350618294') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
 # This Channel Is For When User Request File With command or hashtag like - /request or #request
@@ -66,9 +66,9 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 # MongoDB information
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ankushdeb91:WpbkXkwE0rL98h7q@cluster0.cpl3y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://manobidev9101:XQ2XWhYB36471Vgu@cluster0.cxaa8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Akmovie')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rajmovie')
 
 # If Multiple Database Is True Then Fill All Three Below Database Uri Else You Will Get Error.
 O_DB_URI = environ.get('O_DB_URI', "")   # This Db Is For Other Data Store
@@ -94,9 +94,9 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Sharmamoviediscus')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MovieupdatewithAK')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Sharmamoviediscus') # Support Chat Link Without https:// or @
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/vhjhhhh')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+1_yOG5hnOGljMmI1')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 't.me/rajdeb21') # Support Chat Link Without https:// or @
 
 
 # True Or False
@@ -120,8 +120,8 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 # Token Verification Info :
 VERIFY = bool(environ.get('VERIFY', False))
 VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'shortxlinks.com')
-VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '26c58ac6c7879cf25966a3f6fc999c9c1e3c9315')
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/akmoviefile0/18')
+VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '')
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
 
 # If You Fill Second Shortner Then Bot Attach Both First And Second Shortner And Use It For Verify.
 VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
@@ -140,7 +140,7 @@ TUTORIAL = environ.get('TUTORIAL', 'https://t.me/akmoviefile0/18') # How Open Sh
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 PORT = environ.get("PORT", "8080")
-MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
+MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️ i am raj')
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
