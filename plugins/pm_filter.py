@@ -1457,7 +1457,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 except:
                     return
         except:
-            await query.answer("Not For Your My Dear", show_alert=True)
+            await query.answer("hey im raj this isNot For Your My Dear", show_alert=True)
    
     elif query.data.startswith("del"):
         ident, file_id = query.data.split("#")
